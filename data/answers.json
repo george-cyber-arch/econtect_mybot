@@ -1,0 +1,34 @@
+{
+  "187": {
+    "user_id": 924475051,
+    "username": "SireXl",
+    "text": "Смішно",
+    "score": 20.5,
+    "positive_reactions": 2,
+    "negative_reactions": 0
+  },
+  "188": {
+    "user_id": 924475051,
+    "username": "SireXl",
+    "text": "Середньо",
+    "score": 4.5,
+    "positive_reactions": 2,
+    "negative_reactions": 0
+  },
+  "189": {
+    "user_id": 924475051,
+    "username": "SireXl",
+    "text": "Не смішно",
+    "score": -6,
+    "positive_reactions": 0,
+    "negative_reactions": 2
+  },
+  "190": {
+    "user_id": 1853383481,
+    "username": "Оксана",
+    "text": "Мама середньо",
+    "score": 4,
+    "positive_reactions": 2,
+    "negative_reactions": 0
+  }
+}
