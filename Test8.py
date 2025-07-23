@@ -12,11 +12,12 @@ from dotenv import load_dotenv
 load_dotenv()
 
 ADMIN_ID = "924475051"
-USERS_FILE = "data/users.json"
-ANSWERS_FILE = "data/answers.json"
-VOTES_FILE = "data/votes.json"
-SEEN_FILE = "data/seen.json"
-CONFIG_FILE = "data/config.json"
+DATA_DIR = "/data"
+USERS_FILE = os.path.join(DATA_DIR, "users.json")
+ANSWERS_FILE = os.path.join(DATA_DIR, "answers.json")
+VOTES_FILE = os.path.join(DATA_DIR, "votes.json")
+SEEN_FILE = os.path.join(DATA_DIR, "seen.json")
+CONFIG_FILE = os.path.join(DATA_DIR, "config.json")
 config = load_data(CONFIG_FILE)
 MAX_CHARS = config.get("max_chars", 20)
 
@@ -1027,7 +1028,7 @@ async def my_invite(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 # Main function to set up the bot and handlers
 def main():
-    os.makedirs("data", exist_ok=True)
+    os.makedirs(DATA_DIR, exist_ok=True)
     for file, default in [
         (USERS_FILE, {}),
         (ANSWERS_FILE, {}),
