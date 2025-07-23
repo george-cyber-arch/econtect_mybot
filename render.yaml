@@ -1,0 +1,11 @@
+services:
+  - type: worker
+    name: econtect-mybot
+    runtime: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python Test8.py"
+    plan: free
+    envVars:
+      - key: BOT_TOKEN
+        fromEnvVar: BOT_TOKEN
+    pythonVersion: 3.11.9
